@@ -69,6 +69,7 @@ function FuncionalitesButtons() {
 }
 export default function WritePage() {
   const [value, setValue] = React.useState("");
+  console.log(value)
   return (
     <div className="flex flex-col relative">
       <Input placeholder="Title" className="p-12 text-5xl border-none outline-none bg-transparent text-slate-500 placeholder:text-slate-300"/>
@@ -83,7 +84,7 @@ export default function WritePage() {
           className="min-h-96 max-h-fit text-xl"
         />
       </div>
-      <button className="py-2 px-5 border-none cursor-pointer text-slate-100 bg-green-800 w-fit rounded-full mt-20">Publish</button>
+      <button disabled={value.includes("br") || value.length <=0 } className="py-2 px-5 border-none cursor-pointer text-slate-100 bg-green-800 w-fit rounded-full mt-20 disabled:cursor-not-allowed disabled:bg-green-950">Publish</button>
     </div>
   );
 }

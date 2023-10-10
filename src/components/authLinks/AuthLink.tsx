@@ -1,3 +1,5 @@
+"use client";
+import { UserButton, useAuth } from "@clerk/nextjs";
 import Link from "next/link";
 import {
   DropdownMenu,
@@ -7,10 +9,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { MenuIcon } from "lucide-react";
 export const AuthLinks = () => {
-  const status = "notAuthenticated";
+  const { userId } = useAuth();
+
   return (
     <>
-      {status === "notAuthenticated" ? (
+      {userId == null ? (
         <>
           <Link href="/sign-in" className="hidden md:block">
             Login
@@ -34,9 +37,10 @@ export const AuthLinks = () => {
           <Link href="/write" className="hidden md:block">
             Escreva
           </Link>
-          <Link href="/logout" className="hidden md:block">
-            Logout
-          </Link>{" "}
+
+          <div className="hidden md:block">
+          <UserButton afterSignOutUrl="/"  />
+          </div>
           <DropdownMenu>
             <DropdownMenuTrigger className="md:hidden">
               <MenuIcon size={35} />
@@ -49,7 +53,7 @@ export const AuthLinks = () => {
                 <Link href="/write">Escreva</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/Logout">Logout</Link>
+                <UserButton afterSignOutUrl="/" />
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
