@@ -1,3 +1,4 @@
+import { ClerkProvider } from '@clerk/nextjs'
 import { Footer } from "@/components/footer/Footer";
 import { Navbar } from "@/components/navbar/Navbar";
 import "./globals.css";
@@ -17,6 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className={inter.className}>
         <main className="min-h-screen bg-gray-100 text-black">
@@ -28,5 +30,6 @@ export default function RootLayout({
         </main>
       </body>
     </html>
+    </ClerkProvider>
   );
 }

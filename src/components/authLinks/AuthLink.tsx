@@ -14,7 +14,7 @@ export const AuthLinks = () => {
     <>
       {status === "notAuthenticated" ? (
         <>
-          <Link href="/login" className="hidden md:block">
+          <Link href="/sign-in" className="hidden md:block">
             Login
           </Link>
           <DropdownMenu>
@@ -26,7 +26,7 @@ export const AuthLinks = () => {
               <DropdownMenuItem>Sobre</DropdownMenuItem>
               <DropdownMenuItem>Contato</DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/login">Login</Link>
+                <Link href="/sign-in">Login</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

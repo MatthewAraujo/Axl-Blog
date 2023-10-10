@@ -21,7 +21,7 @@ export default function SinglePage() {
             </div>
           </div>
         </div>
-        <div className="flex-1 h-[350px] relative">
+        <div className="flex-1 h-[350px] relative hidden sm:block">
           <Image
             src="/p1.jpeg"
             alt=""
@@ -30,8 +30,8 @@ export default function SinglePage() {
           />
         </div>
       </div>
-      <div className="flex gap-12 mt-12">
-        <div className="w-3/4">
+      <div className="w-full lg:flex gap-12 mt-12">
+        <div className="w-full lg:w-3/4">
           <div className="">
             <p className=" text-sm sm:text-lg font-light mb-5 text-justify">
               {" "}

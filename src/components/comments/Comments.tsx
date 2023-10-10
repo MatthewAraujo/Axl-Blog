@@ -9,7 +9,7 @@ export function Comments() {
     <div className="mt-12">
       <div className="mb-8 text-slate-600">Comments</div>
 
-      {status === "autienticated" ? (
+      {status === "auAtienticated" ? (
         <div className="flex items-center justify-between gap-8">
           <Textarea
             placeholder="write a comment..."
@@ -22,8 +22,8 @@ export function Comments() {
           </button>
         </div>
       ) : (
-        <Link href="/login">
-          <a className="text-teal-500 font-bold">Login to comment</a>
+        <Link href="/sign-in" className="text-teal-500 font-bold">
+          sign-in to comment
         </Link>
       )}
 
