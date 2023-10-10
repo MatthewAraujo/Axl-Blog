@@ -2,14 +2,16 @@
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useAuth } from "@clerk/nextjs";
 
 export function Comments() {
-  const status = "autienticated";
+  const { userId } = useAuth();
+
   return (
     <div className="mt-12">
       <div className="mb-8 text-slate-600">Comments</div>
 
-      {status === "autienticated" ? (
+      {userId !== null ? (
         <div className="flex items-center justify-between gap-8">
           <Textarea
             placeholder="write a comment..."

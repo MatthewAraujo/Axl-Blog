@@ -11,6 +11,7 @@ import { MenuIcon } from "lucide-react";
 export const AuthLinks = () => {
   const { userId } = useAuth();
 
+
   return (
     <>
       {userId == null ? (
