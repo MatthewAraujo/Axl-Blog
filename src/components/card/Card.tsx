@@ -27,8 +27,8 @@ export function Card({ item, key }: CardProps) {
           <h1>{item.title}</h1>
         </Link>
         <div
-          className="text-lg font-light text-slate-600"
-          dangerouslySetInnerHTML={{ __html: item?.desc.substring(0, 60) }}
+          className="text-lg font-light text-slate-600 line-clamp-3"
+          dangerouslySetInnerHTML={{ __html: item?.desc }}
         />
         <Link
           href={`/posts/${item.slug}`}

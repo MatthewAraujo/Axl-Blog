@@ -4,7 +4,7 @@ import { randomInt } from "crypto";
 
 export const CardList = () => {
   return (
-    <div className="w-3/4">
+    <div className="w-full lg:w-3/4">
       <h1 className="my-12 mx-0">Recent Posts</h1>
       <div>
         <Card key={randomInt(10)} item={
@@ -31,7 +31,7 @@ export const CardList = () => {
           }
         }/>
       </div>
-      <Pagination />
+      <Pagination hasNext={true} hasPrev={true} page={1}  />
     </div>
   );
 };
