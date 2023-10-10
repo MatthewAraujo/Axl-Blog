@@ -1,16 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useState } from "react";
 
 interface CardProps {
   item: any;
-  key: any;
 }
 
-export function Card({ item, key }: CardProps) {
+export function Card({ item, }: CardProps) {
   return (
-    <div className="mb-12 flex items-center gap-12" key={key}>
+    <div className="mb-12 flex items-center gap-12">
       {item.img && (
         <div className=" hidden sm:block flex-1 h-[350px] relative">
           <Image src={item.img} alt="" fill className="object-cover" />
