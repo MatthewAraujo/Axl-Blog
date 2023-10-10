@@ -9,7 +9,7 @@ export function Comments() {
     <div className="mt-12">
       <div className="mb-8 text-slate-600">Comments</div>
 
-      {status === "auAtienticated" ? (
+      {status === "autienticated" ? (
         <div className="flex items-center justify-between gap-8">
           <Textarea
             placeholder="write a comment..."
