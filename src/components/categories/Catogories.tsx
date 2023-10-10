@@ -15,7 +15,7 @@ export const Categories = () => {
             alt="programming"
             width={32}
             height={32}
-            className="rounded-full"
+            className="rounded-full aspect-square"
           />
           Style
         </Link>
@@ -28,7 +28,7 @@ export const Categories = () => {
             alt="programming"
             width={32}
             height={32}
-            className="rounded-full"
+            className="rounded-full aspect-square"
           />
           Style
         </Link>{" "}
@@ -41,7 +41,7 @@ export const Categories = () => {
             alt="programming"
             width={32}
             height={32}
-            className="rounded-full"
+            className="rounded-full aspect-square"
           />
           Style
         </Link>{" "}
@@ -54,7 +54,7 @@ export const Categories = () => {
             alt="programming"
             width={32}
             height={32}
-            className="rounded-full"
+            className="rounded-full aspect-square"
           />
           Style
         </Link>{" "}
@@ -67,7 +67,7 @@ export const Categories = () => {
             alt="programming"
             width={32}
             height={32}
-            className="rounded-full"
+            className="rounded-full aspect-square"
           />
           Style
         </Link>{" "}
@@ -80,7 +80,7 @@ export const Categories = () => {
             alt="programming"
             width={32}
             height={32}
-            className="rounded-full"
+            className="rounded-full aspect-square"
           />
           Style
         </Link>{" "}
