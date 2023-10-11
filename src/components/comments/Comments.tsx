@@ -14,7 +14,7 @@ export function Comments() {
       {userId !== null ? (
         <div className="flex items-center justify-between gap-8">
           <Textarea
-            placeholder="write a comment..."
+            placeholder="write a comment...."
             className="w-full h-24 p-4 border resize-none border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             onChange={() => {}}
           />
