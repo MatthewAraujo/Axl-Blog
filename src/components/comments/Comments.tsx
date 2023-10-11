@@ -24,7 +24,7 @@ export function Comments() {
           </button>
         </div>
       ) : (
-        <Link href="/sign-in" className="text-teal-500 font-bold">
+        <Link href="/sign-up" className="text-teal-500 font-bold">
           sign-in to comment
         </Link>
       )}

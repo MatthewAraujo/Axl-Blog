@@ -16,7 +16,7 @@ export const AuthLinks = () => {
     <>
       {userId == null ? (
         <>
-          <Link href="/sign-in" className="hidden md:block">
+          <Link href="/sign-up" className="hidden md:block">
             Login
           </Link>
           <DropdownMenu>
@@ -28,7 +28,7 @@ export const AuthLinks = () => {
               <DropdownMenuItem>Sobre</DropdownMenuItem>
               <DropdownMenuItem>Contato</DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/sign-in">Login</Link>
+                <Link href="/sign-up">Login</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
